@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,700,900&display=swap&subset=japanese');
+
+/*//// default ////*/
+body{
+	text-align: left;
+	font-size:13px;
+	line-height:1.6;
+	font-family: 'Noto Sans JP', sans-serif;
+	/*font-family: custom,"���C���I","Meiryo","�l�r �o�S�V�b�N","MS PGothic","�q���M�m�p�S Pro W3","Hiragino Kaku Gothic Pro",meiryo,Arial,sans-serif;*/
+	}
+div#layout body,h1,h2,h3,h4,h5,p,ul,ol,li,dl,dd,dt{margin:0;padding:0px;}
+div#layout *{box-sizing:border-box;}
+div#layout img {border:0;vertical-align: middle;max-width: 100%;}
+div#layout p {text-align: left;}
+div#layout a {text-decoration: none;}
+div#layout a:hover {text-decoration: underline;}
+div#layout a:hover img{
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	}
+
+#main{
+	width:768px;
+	}
+div#layout .phr{
+	float: right;
+	margin-left:15px;
+	}
+div#layout .phl{
+	float: left;
+	margin-right:15px;
+	}
+div#layout .phc{
+	margin:auto;
+	text-align: center;
+	}
+div#layout .clear:after{
+	content:"";
+	display: block;
+	clear:both;
+	}
+
+
+div#layout .youtube{
+	position: relative;
+	width: 100%;
+	padding-top: 56.25% ;
+	}
+div#layout .youtube iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+div#layout .googlemap{
+	position: relative;
+	width: 100%;
+	padding-top: 56% ;
+	border:5px solid #0284ff;
+	box-sizing:border-box;
+	}
+div#layout .googlemap iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	}
+
+/*/// responsible /*/
+.visible640,
+.visible480,
+.visible768,
+.visible950{
+	display: none ;
+	}

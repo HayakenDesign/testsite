@@ -1,0 +1,7 @@
+# このサイトへのすべてのアクセス(*)を、
+# まずauthという名前の関数に通す、という意味の設定
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/auth"
+  status = 200
+  force = true

@@ -1,0 +1,548 @@
+/* base  css ver2.0 ttm */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,700&display=swap&subset=japanese');
+#catalog{
+	text-align: left;
+	font-size:14px;
+	line-height:1.6;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+#catalog h1,#catalog h2,#catalog h3,#catalog h4,#catalog h5,#catalog p,#catalog ul,#catalog ol,#catalog li,#catalog dl,#catalog dd,#catalog dt{margin:0;padding:0px;}
+div#layout *{box-sizing:border-box;}
+div#layout img {border:0;vertical-align: middle;max-width: 100%;}
+div#layout p {text-align: left;}
+div#layout a {text-decoration: none;}
+div#layout a:hover {text-decoration: underline;}
+div#layout a:hover img{
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	}
+
+	#catalog .phr{
+		float: right;
+		margin-left:1.5em;
+		}
+	#catalog .phl{
+		float: left;
+		margin-right:1.5em;
+		}
+	#catalog .phc{
+		margin:auto;
+		text-align: center;
+		}
+	#catalog .clear:after{
+		content:"";
+		display: block;
+		clear:both;
+		}
+	#catalog .youtube{
+		position: relative;
+		width: 100%;
+		padding-top: 56.25% ;
+		}
+	#catalog .youtube iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	#catalog .video{
+		width:100%;
+		aspect-radio:16/9;
+		padding:2%;
+		background:#ffec1b;
+		margin:2em auto;
+	}
+	#catalog .video video{
+		width: 100% ;
+		height: 100%;
+	}
+/*/// responsible /*/
+.visible640,
+.visible480,
+.visible768,
+.visible950{
+	display: none ;
+	}
+
+	/*------------ common ---------------------------*/
+
+	#catalog #keyvisual{
+		margin-bottom: 5%;
+		}
+	#catalog p{
+		margin:1.5em auto 0;
+		text-align: left;
+		}
+	#catalog h2{
+		text-align: left;
+		font-size:clamp(23px,calc(33 / 768 * 100vw),33px);
+		font-weight: 700;
+		margin:6% 0 4% ;
+		line-height: 1.3;
+		color:#319bd0;
+		}
+		#catalog h2 .mini{
+			font-size:.6em;
+		}
+	#catalog h2 + h3 {
+		margin-top:3%;
+		}
+	#catalog h3{
+		border-left:5px solid #319bd0;
+		color:#e83828;
+		font-size:clamp(20px,calc(25 / 768 * 100vw),25px);
+		text-align: left;
+		margin:3em 0 1em;
+		padding-left:10px;
+		line-height: 1.4;
+		font-weight: 700;
+		}
+	#catalog h3.ti{
+		padding-left: calc(clamp(43px,calc(50 / 768 * 100vw),50px) + 8px);
+		border:0;
+		padding-left:55px;
+		position: relative;
+		}
+	#catalog h3.ti:before{
+		content: "";
+		display: block;
+		width:clamp(43px,calc(50 / 768 * 100vw),50px);
+		aspect-ratio:1;
+		background:url(../img/mark_h3.png) no-repeat center center;
+		background-size: contain;
+		position: absolute;
+		left:0;
+		top:50%;
+		transform:translateY(-50%);
+	}
+	#catalog h3.ti.new:before{
+		background:url(../img/mark_h3_new.png) no-repeat center center;
+		background-size: contain;
+	}
+	#catalog .red{
+		color:red;
+	}
+	#catalog .mini{
+		font-size:.8em !important;
+	}
+	#catalog .large{
+		font-size:1.5em;
+	}
+	#catalog .cut{
+		margin:2em auto;
+		text-align: center;
+	}
+	#catalog h3.ti + .cut{
+		margin-top:0;
+	}
+	#catalog h4{
+		font-size:clamp(17px,2vw,20px);
+		text-align: left;
+		color:#E20674;
+		font-weight: bold;
+		margin:1.5em  0 0 0;
+	}
+	#catalog h4 + p{
+		margin-top:0.5em;
+	}
+	#catalog .arrow + .cut {
+		margin-top:0;
+	}
+	#catalog .flex{
+		display: flex;
+	}
+	#catalog .flex .row{
+		width:50%;
+	}
+	#catalog .flex .row:nth-child(1){
+		padding:0 20px 0 0;
+	}
+	#catalog .flex .row p:nth-child(1){
+		margin-top:0;
+	}
+	#catalog .flex .row.cut{
+		margin-top:0;
+	}
+	#catalog .intro{
+		display: flex;
+		margin-bottom: 20px;
+		gap:2%;
+	}
+	#catalog .intro .imagearea{
+		flex:0 1 100%;
+	}
+	#catalog .intro .textarea{
+		flex:0 1 100%;
+	}
+	#catalog .intro .textarea p:first-child{
+		margin-top:0;
+		margin-bottom:20;
+	}
+	#catalog .intro .imagearea .imgs{
+		width: 100%;
+		height: 100%;
+	}
+	#catalog .intro .imagearea .imgs img{
+		width:100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+	#catalog .kakomi{
+		border:3px solid red;
+	}
+	#catalog .kakomi p{
+		margin:0;
+		padding:1em;
+	}
+	/*------- org ------*/
+	#catalog strong{
+		color:#319bd0;
+		font-weight: 600;
+	}
+	#catalog p.red strong{
+		color:inherit;
+		text-decoration: underline;
+	}
+	#catalog p + p.red{
+		margin-top:0;
+	}
+	#catalog ul.list{
+		font-size:15px;
+		font-weight: bold;
+		color:#2DA1AA;
+		text-align: left;
+		margin:.5em 0 0 1.8em;
+		list-style: none;
+	}
+		#catalog ul.list li {
+			text-indent:-1em;
+		}
+		#catalog .yellowbox{
+			background:#FFF5CC;
+			border:1px solid #DF5A00;
+			border-radius: 10px;
+			padding:15px 15px 30px;
+		}
+		#catalog .steps{
+			margin:2em 0;
+		}
+	#catalog .steps .step{
+		border:1px solid #0088FF;
+		padding:15px;
+		margin:0 0 40px 0;
+		position: relative;
+	}
+		#catalog .steps .step:after{
+			content:"";
+			display: block;
+			background:url(../img/arrow.png) no-repeat center center;
+			width:96px;
+			height: auto;
+			aspect-ratio:96 / 34;
+			background-size:contain;
+			position: absolute;
+			bottom:0;
+			left:50%;
+			translate:-50% 100%;
+			}
+	#catalog .steps .step:last-child:after{
+		display: none;
+	}
+	#catalog .steps .step.flex{
+		gap:15px;
+	}
+	#catalog .steps .step dl{
+		margin-bottom: 1em;
+	}
+	#catalog .steps .step dl dt{
+		background: #4BBDC5;
+		color:white;
+		font-weight: 600;
+		text-align: center;
+		font-size:clamp(15px, 1.8vw,18px);
+		padding:.3em 1em;
+		border-radius:50px;
+		width: max-content;
+		margin:0 auto 0 0 ;
+		margin-bottom: 1em;
+	}
+	#catalog .steps .step dl dd{
+		text-align: left;
+	}
+	#catalog .steps .step img:not(dd img){
+		width: min(647px,100%);
+	}
+
+/*----------------------------*/
+
+/*number*/
+#catalog .no{
+	position: relative;
+	width:30px;
+	height: 14px;
+	display: inline-block;
+}
+#catalog .no:before{
+	background:#FC0000;
+	border-radius:20px;
+	color:white;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	font-style: normal;
+	line-height: 1.3;
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:20px;
+	height: 20px;
+	transform:translate(-50%,-40%);
+	vertical-align: middle;
+}
+	#catalog .no.no01:before{
+		content:"1";
+}
+	#catalog .no.no02:before{
+		content:"2";
+}
+	#catalog .no.no03:before{
+		content:"3";
+}
+	#catalog .no.no04:before{
+		content:"4";
+}
+#catalog .no.no05:before{
+	content:"5";
+}
+#catalog .no.no06:before{
+	content:"6";
+}
+#catalog .no.no07:before{
+	content:"7";
+}
+#catalog .no.no08:before{
+	content:"8";
+}
+#catalog .no.no09:before{
+	content:"9";
+}
+#catalog .no.no10:before{
+content:"10";
+}
+#catalog .no.no11:before{
+content:"11";
+}
+#catalog .no.no12:before{
+content:"12";
+}
+
+#catalog .number {
+	counter-reset: sono;
+}
+#catalog .number h4{
+	counter-increment: sono;
+	position: relative;
+	padding-left:4em;
+}
+#catalog .number h4:before{
+	content: "その" counter(sono);
+	color:white;
+	background: #90C75A;
+	border-radius:100px;
+	padding:.3em 1em;
+	font-size:.8em;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+#catalog .caution{
+	font-size:11px;
+	color:#FF0000;
+	text-align: left;
+}
+
+#catalog .btnarea{
+	margin:40px auto;
+}
+
+#catalog .spec {
+	display: block;
+}
+#catalog .spec .row{
+	padding:0 20px 0 0;
+}
+#catalog .spec p{
+	margin:5px 0;
+	font-size:13px;
+}
+#catalog .spec dl{
+	text-align: left;
+	margin:0px 0 20px;
+}
+#catalog .spec dl dt{
+	font-size:18px;
+	color:#C20E23;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#catalog .spec dl dd{
+	font-size:13px;
+}
+
+#catalog .spec .row{
+	padding:0 20px 0 0;
+}
+#catalog .waku.red{
+	border:3px solid red;
+	padding:.5em 1em;
+}
+
+/* バージョンアップ内容の番号付きリスト */
+#catalog .waku.green{
+	border:3px solid #319bd0;
+	padding:.5em 1em;
+}
+
+#catalog .new-list{
+	list-style: none;
+	margin: 12px 0 12px 0px;
+	padding: 0;
+}
+
+#catalog .new-list {
+	counter-reset: number;
+	list-style: none;
+	padding-left: 0;
+}
+
+#catalog .new-list li {
+	position: relative;
+	padding-left: 2em;
+	margin-bottom: 8px;
+}
+
+#catalog .new-list li::before {
+	counter-increment: number;
+	content: counter(number);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 0px solid #000;
+	border-radius: 50%;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	line-height: 18px;
+	background-color: #319bd0;
+}
+
+
+/* 重要ラベルのサイズ調整用 */
+#catalog .important-label{
+    font-size: 24px; /* 必要に応じて変更 */
+    font-weight: 700;
+    color: #C20E23;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+/* デスクトップ整理対象者向けの枠線スタイル */
+#catalog .target-box {
+	border: 4px solid #319bd0;
+	padding: 12px;
+	margin: 0px 0;
+	background-color: #f0fffe;
+}
+
+#catalog .target-box ul {
+	margin: 0;
+	padding: 20px 0px 16px 40px;
+	text-align: left;
+}
+
+/* 赤色テキストのスタイル */
+#catalog .red-text {
+	color: red;
+}
+
+/* imageareaの幅を768pxに調整 */
+#catalog .imagearea {
+	width: 768px;
+	max-width: 100%;
+	margin: 12px auto 12px;
+}
+
+/* 問題リストのフォントサイズ調整 */
+#catalog .problem-list {
+	margin-top: 12px;
+	margin-left: 12px;
+	font-size: 16px;
+	line-height: 1;
+}
+
+#catalog .problem-list li {	
+	padding: 16px 0px 12px 0px;
+	margin-left: 12px;
+	font-weight: 600;
+}
+
+/* 問題セクションと画像セクションの間隔調整 */
+#catalog .problem-section {
+	margin-right: 8px;
+}
+
+#catalog .btn-problem-list{
+	list-style: none;
+	margin: 12px 0 0 0;
+	padding: 0;
+}
+
+
+#catalog .btn-problem-list li{
+	margin: 12px 0;
+}
+
+#catalog .btn-problem-list li a{
+	display: block;
+	padding: 12px 16px;
+	background-color: #0b79d0;
+	color: #fff;
+	border: 1px solid #0863a9;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600;
+	box-shadow: 0 2px 0 #064f86;
+	box-sizing: border-box;
+	width: 100%; /* デフォルトは全幅 */
+}
+
+#catalog .btn-problem-list li a:hover{
+	background-color: #0a6bb9;
+}
+
+#catalog .btn-problem-list li a:active{
+	transform: translateY(1px);
+	box-shadow: 0 1px 0 #064f86;
+}
+
+/* 幅調整ユーティリティ（必要に応じて a に付与） */
+#catalog .btn-problem-list li a.btn-w-auto{ width: auto; display: inline-block; }
+#catalog .btn-problem-list li a.btn-w-100{ width: 100%; }
+#catalog .btn-problem-list li a.btn-w-75{ width: 75%; }
+#catalog .btn-problem-list li a.btn-w-50{ width: 50%; }
+
+
+/* 主な機能リストフォント調整用*/
+#catalog .kinou-list{
+    font-size: 18px; /* 必要に応じて変更 */
+    font-weight: 700;
+    color: #319bd0;
+    margin-right: 6px;
+    display: inline-block;
+}

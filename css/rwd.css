@@ -1,0 +1,96 @@
+/*//// RWD ////*/
+#catalog .brsp{
+	display: none;
+}
+@media screen and (max-width: 769px) {
+	#catalog .number li:before,
+	#catalog .number dl dt:before{
+		width: max(30px,4.5vw);
+		height: max(30px,4.5vw);
+	}
+  /*--------------*/
+	#catalog .navi li{
+		flex: 0 0 calc(50% - 5px);
+	}
+
+/*/////////////*/
+.clearfloat768{
+	float: none !important;
+	}
+.visible768{
+	display: block;
+	margin:auto;
+	}
+.hidden768{
+	display: none;
+	}
+.fixwidth768{
+	width:100%;
+	}
+  /*////// 769px ///////////*/
+}
+
+@media screen and (max-width: 641px) {
+	#catalog .intro{
+		display: block;
+	}
+		#catalog .intro .textarea{
+			margin-bottom: 2em;
+		}
+	#catalog .brsp{
+		display: inline;
+	}
+	#catalog .brpc{
+		display: none;
+	}
+#catalog .flex{
+	display: block;
+}
+#catalog .flex .row.cut{
+	margin-top:2em;
+}
+#catalog .flex .row,
+#catalog .flex .row:nth-child(1){
+	width:100%;
+	padding:0;
+}
+/*-----------------------------------*/
+
+/*////////////////*/
+#catalog .phr{
+	float: none;
+	margin:15px auto;
+	}
+.clearfloat640{
+	float: none !important;
+	}
+.visible640{
+	display: block;
+	margin:auto;
+	}
+.hidden640{
+	display: none;
+	}
+/*////// 640pc ///////////*/
+}
+
+@media screen and (max-width: 481px) {
+
+/*/////////////////*/
+#catalog .phr,#catalog .phl{
+	float: none;
+	margin:0;
+	margin:20px auto;
+	}
+.clearfloat480{
+	float: none !important;
+	}
+.visible480{
+	display: block;
+	margin:auto;
+	}
+.hidden480{
+	display: none;
+	}
+/*////// 481px ///////////*/
+}
